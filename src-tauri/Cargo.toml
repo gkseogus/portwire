@@ -1,6 +1,6 @@
 [package]
 name = "local_server_widget"
-version = "0.1.0"
+version = "0.1.1"
 description = "Always-on-top macOS widget to start/stop local dev servers per project and wire frontend/backend ports"
 authors = ["gkseogus"]
 license = "MIT"
