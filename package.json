@@ -1,7 +1,7 @@
 {
   "name": "local_server_widget",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.2.0",
   "license": "MIT",
   "packageManager": "pnpm@10.33.2",
   "type": "module",
