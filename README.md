@@ -1,4 +1,4 @@
-# Local Server Widget
+# Portwire
 
 **English** | [한국어](README.ko.md)
 
@@ -8,7 +8,7 @@ An always-on-top macOS widget that starts and stops your local dev servers per p
 
 ## Download
 
-Download the `.dmg` from [Releases](https://github.com/gkseogus/local_server_widget/releases/latest), open it, and move `Local Server Widget.app` to the Applications folder.
+Download the `.dmg` from [Releases](https://github.com/gkseogus/portwire/releases/latest), open it, and move `Portwire.app` to the Applications folder.
 macOS only. The app is a universal build for both Apple Silicon and Intel.
 
 The app is ad-hoc signed and not notarized by Apple, so macOS blocks it the first time you open it. Open it in one of two ways:
@@ -17,7 +17,7 @@ The app is ad-hoc signed and not notarized by Apple, so macOS blocks it the firs
 - Remove the quarantine attribute in Terminal:
 
   ```sh
-  xattr -dr com.apple.quarantine "/Applications/Local Server Widget.app"
+  xattr -dr com.apple.quarantine "/Applications/Portwire.app"
   ```
 
 The UI is currently Korean only.

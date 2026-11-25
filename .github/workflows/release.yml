@@ -33,13 +33,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tagName: ${{ github.ref_name }}
-          releaseName: Local Server Widget ${{ github.ref_name }}
+          releaseName: Portwire ${{ github.ref_name }}
           releaseBody: |
-            Download the `.dmg`, open it, and drag **Local Server Widget** to Applications.
+            Download the `.dmg`, open it, and drag **Portwire** to Applications.
 
             The app is not notarized by Apple, so macOS blocks the first launch.
             Open it once, then go to System Settings → Privacy & Security and click **Open Anyway**,
-            or run `xattr -dr com.apple.quarantine "/Applications/Local Server Widget.app"`.
+            or run `xattr -dr com.apple.quarantine "/Applications/Portwire.app"`.
           releaseDraft: true
           prerelease: false
           args: --target universal-apple-darwin
