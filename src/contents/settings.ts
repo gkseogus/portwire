@@ -9,6 +9,12 @@ export const DEFAULT_CORS_KEY = "CORS_ORIGINS";
 /** Rust config::is_env_key 와 같은 규칙: `[A-Za-z_][A-Za-z0-9_]*` */
 export const ENV_KEY_PATTERN = /^[A-Za-z_][A-Za-z0-9_]*$/;
 
+/** 붙여넣은 .env 줄 앞의 `export ` */
+export const ENV_EXPORT_PREFIX = /^export\s+/;
+
+/** 따옴표 없는 .env 값 뒤의 ` # 주석` (`#` 앞에 공백이 있어야 주석이다: `COLOR=#fff` 는 값) */
+export const ENV_INLINE_COMMENT = /\s+#.*$/;
+
 /** 서버 이름 = Rust 템플릿 식별자. `{이름.url}` 로 참조되므로 이 글자만 쓸 수 있다. */
 export const SERVICE_NAME_PATTERN = /^[A-Za-z0-9_-]+$/;
 
@@ -149,6 +155,18 @@ export const ENV_TEXT = {
   urlOptionSuffix: "주소",
   add: "변수 추가",
   remove: "변수 삭제",
+  pasteOpen: "한꺼번에 붙여넣기",
+  pasteLabel: ".env 내용 붙여넣기",
+  pastePlaceholder: "API_URL=http://localhost:8000\nDEBUG=1",
+  pasteWarning:
+    "프로젝트 .env 에 있는 값은 실행할 때 그대로 읽히니, 위젯에서 바꿀 값만 넣으세요. 비밀번호·토큰은 설정 파일과 위젯 화면에 그대로 보여요.",
+  pasteNothing: "KEY=VALUE 줄을 찾지 못했어요.",
+  pasteApply: "추가",
+  pasteCancel: "취소",
+  pasteAdded: "개 추가",
+  pasteReplaced: "개 바꿈",
+  pasteSkipped: "줄 건너뜀",
+  pasteUnchanged: "바뀐 값이 없어요.",
 } as const;
 
 export const PREVIEW_TEXT = {

@@ -6,6 +6,19 @@ export interface EnvRowFace {
   value: string;
 }
 
+/** 붙여넣은 `.env` 텍스트를 읽은 결과. skipped 는 KEY=VALUE 로 읽지 못한 줄 수 (빈 줄·주석 제외) */
+export interface ParsedEnvTextFace {
+  rows: EnvRowFace[];
+  skipped: number;
+}
+
+/** 붙여넣은 행을 기존 env 에 합친 결과. replaced 는 값이 실제로 바뀐 기존 변수 수 */
+export interface MergedEnvFace {
+  env: EnvRowFace[];
+  added: number;
+  replaced: number;
+}
+
 /** 편집 중인 서비스. 포트는 입력란을 비울 수 있어야 하므로 null 을 허용한다. */
 export interface DraftServiceFace {
   name: string;
