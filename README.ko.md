@@ -1,4 +1,4 @@
-# 로컬서버 위젯
+# Portwire
 
 [English](README.md) | **한국어**
 
@@ -8,7 +8,7 @@
 
 ## 다운로드
 
-[Releases](https://github.com/gkseogus/local_server_widget/releases/latest) 에서 `.dmg` 를 받아 열고 `Local Server Widget.app` 을 Applications 폴더로 옮긴다.
+[Releases](https://github.com/gkseogus/portwire/releases/latest) 에서 `.dmg` 를 받아 열고 `Portwire.app` 을 Applications 폴더로 옮긴다.
 macOS 전용이며, Apple Silicon 과 Intel 을 모두 지원하는 유니버설 앱이다.
 
 앱이 Apple 공증을 받지 않은 ad-hoc 서명이라 처음 열 때 macOS 가 막는다. 다음 둘 중 하나로 연다.
@@ -17,7 +17,7 @@ macOS 전용이며, Apple Silicon 과 Intel 을 모두 지원하는 유니버설
 - 터미널에서 격리 속성을 지운다.
 
   ```sh
-  xattr -dr com.apple.quarantine "/Applications/Local Server Widget.app"
+  xattr -dr com.apple.quarantine "/Applications/Portwire.app"
   ```
 
 ## 왜 만들었나
